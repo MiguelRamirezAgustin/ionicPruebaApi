@@ -1,0 +1,27 @@
+<ion-header no-border>
+  <ion-toolbar text-center>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalle de usuarios</ion-title>
+  </ion-toolbar >
+</ion-header>
+
+<ion-content>
+  <div text-center>
+      <ion-img src="assets/boy.png"></ion-img>
+  </div>
+  <ion-card class="carBorder">
+    <ion-card-content class=“item-borderless” >
+     <ion-label class="detalleUsuario">Nombre: {{arg.name}}</ion-label><br>
+     <ion-label class="detalleUsuario">Género: {{arg.gender}}</ion-label><br>
+     <ion-label class="detalleUsuario">Altura: {{arg.height}}</ion-label><br>
+     <ion-label class="detalleUsuario">Masa: {{arg.mass}}</ion-label><br>
+     <ion-label class="detalleUsuario">Fecha de Nacimiento: {{arg.birth_year}}</ion-label><br>
+     <ion-label class="detalleUsuario">Color de Piel: {{arg.skin_color}}</ion-label><br>
+     <ion-label class="detalleUsuario">Color de Ojos: {{arg.eye_color}}</ion-label><br>
+     <ion-label class="detalleUsuario">Fecha de Registro: {{arg.created| date: 'dd/MM/yyyy' }}</ion-label>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
